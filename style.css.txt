@@ -1,0 +1,214 @@
+/* ============== THEME ============== */
+:root {
+    --bg1: #eef2f9;
+    --bg2: #cfe0ff;
+    --surface: #ffffff;
+    --surface-2: #f7f9ff;
+    --text: #202533;
+    --muted: #7a889c;
+    --brand: #2f83ff;
+    --brand-2: #7c4dff;
+    --ok: #10b981;
+    --warn: #e7c46b;
+    --shadow: 0 10px 30px rgba(0, 0, 0, .12);
+    --shadow-lg: 0 18px 46px rgba(0, 0, 0, .14);
+    --ring: #ffffffcc;
+    --ring2: #00000012;
+}
+[data-theme="dark"] {
+    --bg1: #0f1220;
+    --bg2: #12142a;
+    --surface: #161a33;
+    --surface-2: #0f1426;
+    --text: #e5ecff;
+    --muted: #a5b3d1;
+    --brand: #6aa6ff;
+    --brand-2: #b388ff;
+    --shadow: 0 10px 30px rgba(0, 0, 0, .5);
+    --shadow-lg: 0 18px 46px rgba(0, 0, 0, .55);
+    --ring: #00000055;
+    --ring2: #ffffff12;
+}
+
+/* Reset & base */
+* { box-sizing: border-box }
+html, body {
+    margin: 0; padding: 0;
+    font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+    color: var(--text);
+    background: linear-gradient(180deg, var(--bg1), var(--bg2)) fixed;
+}
+
+/* Soft decorative blobs */
+body::before, body::after {
+    content: "";
+    position: fixed;
+    inset: auto auto 10% -80px;
+    width: 320px; height: 320px;
+    background: radial-gradient(closest-side, var(--brand-2) 0%, transparent 70%);
+    filter: blur(48px); opacity: .25;
+    pointer-events: none; z-index: 0;
+    transform: rotate(12deg);
+}
+body::after {
+    inset: 8% -80px auto auto;
+    width: 360px; height: 360px;
+    background: radial-gradient(closest-side, var(--brand) 0%, transparent 70%);
+    transform: rotate(-12deg);
+}
+
+/* Container */
+.container {
+    width: min(1100px, 92%);
+    margin-inline: auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* ===== NAV ===== */
+nav {
+    position: sticky; top: 0; z-index: 50;
+    backdrop-filter: saturate(1.2) blur(10px);
+    background: linear-gradient(180deg, rgba(255,255,255,.75), rgba(255,255,255,.55));
+    border-bottom: 1px solid var(--ring2);
+}
+[data-theme="dark"] nav {
+    background: linear-gradient(180deg, rgba(22,26,51,.72), rgba(22,26,51,.6));
+}
+.nav-wrap { display:flex; align-items:center; gap:14px; padding:10px 0; }
+.brand { font-weight:800; letter-spacing:.3px; margin-right:8px; }
+.tabs { display:flex; gap:10px; flex:1; justify-content:center; }
+.nav-link {
+    font-weight:700; padding:8px 14px; border-radius:999px;
+    text-decoration:none; color:var(--text); transition:.2s;
+    border:1px solid transparent; background:transparent;
+}
+.nav-link:hover { background:var(--surface-2); }
+.nav-link.active {
+    color:var(--brand);
+    background: color-mix(in oklab, var(--brand) 14%, transparent);
+    border-color: color-mix(in oklab, var(--brand) 24%, transparent);
+}
+.nav-ops { display:flex; gap:8px; align-items:center; }
+.icon-btn {
+    width:40px; height:40px; border-radius:12px;
+    border:1px solid var(--ring2); background:var(--surface);
+    display:grid; place-items:center; cursor:pointer;
+    box-shadow:var(--shadow); transition: transform .15s, filter .15s;
+}
+.icon-btn:hover { transform: translateY(-2px); }
+
+/* ===== HERO ===== */
+.hero { display:grid; place-items:center; text-align:center; padding:46px 0 10px; }
+.avatar-wrap { position:relative; width:120px; height:120px; }
+.avatar {
+    width:100%; height:100%; border-radius:50%;
+    object-fit:cover; box-shadow:var(--shadow); position:relative; z-index:2;
+}
+/* ring double */
+.avatar-wrap::before, .avatar-wrap::after {
+    content:""; position:absolute; inset:-10px; border-radius:50%;
+    border:10px solid var(--ring); z-index:1; filter: drop-shadow(0 10px 24px var(--ring2));
+}
+.avatar-wrap::after {
+    inset:-22px; border:2px dashed color-mix(in oklab, var(--brand) 60%, transparent);
+    animation: spin 14s linear infinite; opacity:.7;
+}
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.intro-top { opacity:.8; margin:.6rem 0 0; }
+.name { margin:.2rem 0 0; font-size: clamp(28px, 6vw, 48px); line-height:1.08; }
+.role { opacity:.9; margin:.3rem 0 1.1rem; }
+.role-typing {
+    font-weight:700; background: linear-gradient(90deg, var(--brand-2), var(--brand));
+    -webkit-background-clip:text; background-clip:text; color:transparent;
+    border-right:2px solid var(--brand-2); padding-right:4px;
+}
+
+/* Apps */
+.apps { display:flex; gap:14px; justify-content:center; margin:10px 0 16px; isolation:isolate; }
+.app {
+    width:58px; height:58px; border-radius:14px; overflow:hidden; box-shadow:var(--shadow);
+    display:grid; place-items:center; position:relative; transition: transform .18s;
+    background:transparent; border:1px solid var(--ring2);
+}
+.app:hover { transform: translateY(-2px); }
+.app img { width:100%; height:100%; object-fit:cover; display:block; mix-blend-mode:multiply; }
+[data-theme="dark"] .app img { filter: brightness(1.08) contrast(1.02); }
+
+/* desktop/iPad ngang */
+@media (min-width:768px) {
+    .hero {
+        grid-template-columns: min(420px, 40vw) 1fr;
+        gap:42px; text-align:left; align-items:center; justify-items:start;
+        padding:60px 0 20px;
+    }
+    .avatar-wrap { width:360px; height:360px; }
+    .apps { justify-content:flex-start; }
+    .name { font-size: clamp(42px, 5vw, 64px); }
+}
+
+/* ===== CARDS & SECTIONS ===== */
+.section-title { font-weight:800; text-align:center; font-size:26px; margin:10px 0 6px; }
+.section-wrap { padding:10px 0; }
+.card {
+    background:var(--surface); border:1px solid var(--ring2); border-radius:18px;
+    padding:18px; box-shadow:var(--shadow); margin:16px 0;
+    opacity:0; transform: translateY(16px); transition: 600ms cubic-bezier(.2,.7,.2,1);
+}
+.card.reveal { opacity:1; transform: translateY(0); }
+
+/* ... (toàn bộ các phần CSS cũ của bạn) ... */
+
+/* ===== AUTO-FIT & BREAKPOINTS MINI ===== */
+/* Phần này chính là đoạn mình đã thêm cho responsive mọi kích thước */
+html{ font-size: clamp(12px, 2.8vw, 16px); }
+img, video, canvas, svg, iframe { max-width:100%; height:auto; }
+.tabs{ overflow-x:auto; overflow-y:hidden; -webkit-overflow-scrolling:touch; scrollbar-width:none; }
+.tabs::-webkit-scrollbar{ display:none; }
+.nav-link{ padding:.45rem .7rem; }
+.card, .list-card, .info-card, .bank-card{ border-radius:14px; }
+.avatar-wrap{ width: clamp(56px, 25vw, 120px); height: clamp(56px, 25vw, 120px); }
+.app{ width: clamp(24px, 12vw, 58px); height: clamp(24px, 12vw, 58px); border-radius:12px; }
+.grid-2{ grid-template-columns: repeat(auto-fit, minmax(min(240px, 100%), 1fr)); }
+@media (min-width:560px) and (max-width:767.98px){
+  .hero{ grid-template-columns:220px 1fr; gap:24px; text-align:left; justify-items:start; }
+  .apps{ justify-content:flex-start; }
+}
+@media (max-width:480px){
+  .nav-wrap{ padding:8px 0; gap:8px; }
+  .brand{ font-size:14px; }
+  .section-title{ font-size:20px; }
+  .card{ padding:14px; margin:12px 0; }
+  .list-card{ grid-template-columns:auto 1fr; }
+  .logo{ width:44px; height:44px; border-radius:10px; }
+  .pill{ padding:3px 8px; font-size:11px; }
+  .btn{ padding:9px 12px; border-radius:10px; }
+  .bank-card{ grid-template-columns:1fr; gap:10px; }
+  .qr{ width:84px; height:84px; }
+}
+@media (max-width:320px){
+  .tabs .nav-link{ font-size:12px; padding:6px 8px; }
+  .role{ font-size:13px; }
+  .pill{ font-size:10px; }
+  .bank-meta{ font-size:12px; }
+  .apps{ gap:10px; }
+  .to-top{ right:12px; bottom:12px; width:40px; height:40px; }
+}
+@media (max-width:200px){
+  .brand{ display:none; }
+  .nav-link{ padding:4px 6px; font-size:10px; }
+  .hero{ padding:24px 0 6px; }
+  .name{ font-size: clamp(16px, 7vw, 22px); }
+  .role{ margin:.2rem 0 .7rem; }
+  .apps{ gap:6px; }
+  .app{ border-radius:8px; }
+  .card, .info-card, .list-card, .bank-card{ padding:10px; border-radius:10px; }
+  .grid-2{ grid-template-columns:1fr; }
+  .section-title{ font-size:18px; }
+  .btn, .btn.btn-outline{ padding:8px 10px; font-size:12px; }
+  .input, .textarea{ padding:8px 10px; }
+}
+.bar{ height:10px; }
+@media (max-width:320px){ .bar{ height:8px; } }
+#visitChip{ display:inline-block; max-width:100%; white-space:nowrap; text-overflow:ellipsis; overflow:hidden; }

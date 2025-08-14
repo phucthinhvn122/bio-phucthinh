@@ -1,0 +1,290 @@
+<!doctype html>
+<html lang="vi" data-theme="light">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Quốc Chiến – Bio</title>
+  <meta name="description" content="Website Bán Hack Và Mua Key Game Tự Động" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- NAV -->
+  <nav>
+    <div class="container nav-wrap">
+      <div class="brand">Quốc Chiến</div>
+      <div class="tabs">
+        <a href="#home" class="nav-link active" data-tab="home">Home</a>
+        <a href="#about" class="nav-link" data-tab="about">About</a>
+        <a href="#contact" class="nav-link" data-tab="contact">Contact</a>
+        <a href="#bank" class="nav-link" data-tab="bank">Bank</a>
+      </div>
+      <div class="nav-ops">
+        <button id="themeToggle" class="icon-btn" title="Đổi giao diện (T/L)">
+          <span id="themeIcon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero container" id="homeSection">
+    <div class="avatar-wrap">
+      <img class="avatar" src="https://drive.google.com/thumbnail?id=1inZPaim-Uif3GbUvo2AcwnDcQzd_-wuQ&sz=w1024" alt="Avatar">
+    </div>
+    <div>
+      <p class="intro-top">Hi, I am</p>
+      <h1 class="name">Quốc Chiến</h1>
+      <p class="role">and I'm a <span class="role-typing" id="roleTyping"></span></p>
+
+      <!-- GIỮ NGUYÊN NÚT ẢNH; đã khử nền trắng đằng sau bằng CSS -->
+      <nav class="apps">
+        <a class="app" href="https://www.facebook.com/QuocChien2709" target="_blank" aria-label="Facebook">
+          <img src="https://drive.google.com/thumbnail?id=1GyFIn_AHnnwged5TUYWByn82fwH71zaD&sz=w512" alt="Facebook">
+        </a>
+        <a class="app" href="http://www.youtube.com/@quocchienn" target="_blank" aria-label="YouTube">
+          <img src="https://drive.google.com/thumbnail?id=1hl9GedTS4kOdjZ9_s5ERwm9kjynBdbCB&sz=w2000" alt="YouTube">
+        </a>
+        <a class="app" href="https://zalo.me/84385531007" target="_blank" aria-label="Zalo">
+          <img src="https://drive.google.com/thumbnail?id=10k_hsqbhsK8vA057Y9YW2YEjJ6Qe58RZ&sz=w512" alt="Zalo">
+        </a>
+      </nav>
+
+      <span class="pill brand" id="visitChip">Đang tải…</span>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- TAB: HOME -->
+    <div class="tab-content" id="tab-home">
+      <!-- THÔNG BÁO (đặt lên đầu) -->
+      <section class="card warning" id="warningCard" aria-live="polite">
+        <h2 class="warn-title">THÔNG BÁO</h2>
+        <h4 class="warn-sub">Tất Cả Thành Viên Đều Phải Đọc</h4>
+        <ul class="warn-list">
+          <li>☞ Admin Có Bán CanVa, CapCut Pro và một số app khác.</li>
+          <li>☞ Cộng Đồng Shadowrocket
+            <a class="warn-link" href="https://t.me/shadowrocketunlockproappss" target="_blank" rel="noopener">https://t.me/shadowrocketunlockproappss</a>
+          </li>
+          <li>☞ Nhóm Chat Shadowrocket
+            <a class="warn-link" href="https://t.me/shadowrocketunlockproappss" target="_blank" rel="noopener">https://t.me/shadowrocketunlockproappss</a>
+          </li>
+          <li>☞ Website Shadowrocket crack
+            <a class="warn-link" href="https://shadowrocketcrackappios.blogspot.com" target="_blank" rel="noopener">shadowrocketcrackappios.blog…</a>
+          </li>
+          <li>☞ App Shadowrocket crack
+            <a class="warn-link" href="https://appstorepreview.wuaze.com" target="_blank" rel="noopener">appstorepreview.wuaze.com</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline" id="btnGotIt" title="Đã hiểu">Đã hiểu</button>
+      </section>
+
+      <!-- DOWNLOAD / KEY / MOD -->
+      <section class="section-wrap">
+        <h2 class="section-title">Tải Game & Công Cụ</h2>
+        <div class="list" id="homeList">
+          <!-- 1 -->
+          <div class="list-card" data-id="game1">
+            <span class="logo"><img src="thumb-lq.png" alt="LQ"></span>
+            <div class="item-main">
+              <div class="item-title">Menu Hack Map LQ V1</div>
+              <div class="item-meta">
+                <span class="pill">Cập nhật: <span id="time1">—</span></span>
+                <span class="pill brand" id="dl-game1">0 lượt</span>
+              </div>
+            </div>
+            <a class="action action-download" href="LINK_TAI_GAME" target="_blank" title="Tải ngay" data-id="game1">
+              <img src="https://drive.google.com/thumbnail?id=1mBLNjmgZhiTMUxoHWpIxp9RnA-h9gkWC&sz=w512" alt="Tải">
+            </a>
+          </div>
+          <!-- 2 -->
+          <div class="list-card" data-id="key1">
+            <span class="logo"><img src="thumb-key.png" alt="KEY"></span>
+            <div class="item-main">
+              <div class="item-title">Auto Get Key Hack LQ V1</div>
+              <div class="item-meta">
+                <span class="pill">Cập nhật: <span id="time2">—</span></span>
+                <span class="pill brand" id="dl-key1">0 lượt</span>
+              </div>
+            </div>
+            <a class="action action-download" href="LINK_GET_KEY" target="_blank" title="Mở" data-id="key1">
+              <img src="https://drive.google.com/thumbnail?id=1mBLNjmgZhiTMUxoHWpIxp9RnA-h9gkWC&sz=w512" alt="Mở">
+            </a>
+          </div>
+          <!-- 3 -->
+          <div class="list-card" data-id="mod1">
+            <span class="logo"><img src="thumb-mod.png" alt="MOD"></span>
+            <div class="item-main">
+              <div class="item-title">File Full 40 Skin LQ V5</div>
+              <div class="item-meta">
+                <span class="pill">Cập nhật 05/08</span>
+                <span class="pill brand" id="dl-mod1">0 lượt</span>
+              </div>
+            </div>
+            <a class="action action-download" href="LINK_TAI_FILE_MOD" target="_blank" title="Tải" data-id="mod1">
+              <img src="https://drive.google.com/thumbnail?id=1mBLNjmgZhiTMUxoHWpIxp9RnA-h9gkWC&sz=w512" alt="Tải">
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="card" id="skills">
+        <h3 style="text-align:center">Kỹ Năng Lập Trình</h3>
+        <div class="skills">
+          <div>
+            <div style="display:flex;justify-content:space-between"><b>HTML/CSS</b><span>80%</span></div>
+            <div class="bar"><i data-pct="80"></i></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between"><b>Javascript</b><span>55%</span></div>
+            <div class="bar"><i data-pct="55" data-g="blue"></i></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between"><b>PHP</b><span>35%</span></div>
+            <div class="bar"><i data-pct="35" data-g="purple"></i></div>
+          </div>
+          <div>
+            <div style="display:flex;justify-content:space-between"><b>MySQL</b><span>28%</span></div>
+            <div class="bar"><i data-pct="28" data-g="amber"></i></div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- TAB: ABOUT -->
+    <div class="tab-content" id="tab-about" style="display:none">
+      <section class="section-wrap">
+        <h2 class="section-title">About</h2>
+        <div class="grid-2">
+          <div class="info-card">
+            <h3 style="margin:0 0 6px">Về tôi</h3>
+            <p class="muted" style="margin:6px 0 10px">Mình là Quốc Chiến – dev/creator tập trung vào tool/game mod, auto key và web mini. Mục tiêu: làm mọi thứ <b>nhanh</b>, <b>gọn</b>, <b>dễ dùng</b>.</p>
+            <div class="item-meta">
+              <span class="pill brand">Web mini</span>
+              <span class="pill brand">Auto/Script</span>
+              <span class="pill brand">UI gọn nhẹ</span>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3 style="margin:0 0 6px">Kinh nghiệm nổi bật</h3>
+            <ul style="margin:6px 0 0 18px;line-height:1.8">
+              <li>Tool get-key tự động, UX 1-click.</li>
+              <li>Landing/Bio tốc độ cao, responsive.</li>
+              <li>Tích hợp đếm lượt truy cập, tách code sạch.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="info-card" style="margin-top:16px">
+          <h3 style="margin:0 0 6px">Dịch vụ</h3>
+          <div class="item-meta">
+            <span class="pill">Thiết kế web</span>
+            <span class="pill">Tối ưu hiệu năng</span>
+            <span class="pill">Triển khai hosting</span>
+            <span class="pill">Bot/Automation</span>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- TAB: CONTACT -->
+    <div class="tab-content" id="tab-contact" style="display:none">
+      <section class="section-wrap">
+        <h2 class="section-title">Contact</h2>
+        <div class="grid-2">
+          <div class="info-card">
+            <h3 style="margin:0 0 10px">Kênh liên hệ nhanh</h3>
+            <div style="display:grid;gap:10px">
+              <a class="btn" href="https://zalo.me/84385531007" target="_blank">Zalo: 84385531007</a>
+              <a class="btn btn-outline" href="https://www.facebook.com/QuocChien2709" target="_blank">Facebook: Quốc Chiến</a>
+              <a class="btn btn-outline" href="http://www.youtube.com/@quocchienn" target="_blank">YouTube: @quocchienn</a>
+              <button class="btn" type="button" data-copy="quocchien2709@gmail.com">Copy Email</button>
+            </div>
+          </div>
+          <div class="info-card">
+            <h3 style="margin:0 0 10px">Gửi yêu cầu</h3>
+            <form id="contactForm">
+              <label style="display:grid;gap:6px;margin:8px 0">
+                <span>Họ tên</span>
+                <input class="input" type="text" name="name" placeholder="Tên của bạn" required>
+              </label>
+              <label style="display:grid;gap:6px;margin:8px 0">
+                <span>Email</span>
+                <input class="input" type="email" name="email" placeholder="you@example.com" required>
+              </label>
+              <label style="display:grid;gap:6px;margin:8px 0">
+                <span>Nội dung</span>
+                <textarea class="textarea" name="message" placeholder="Bạn cần gì?" required></textarea>
+              </label>
+              <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+                <button class="btn" type="submit">Gửi qua Email</button>
+                <button class="btn btn-outline" type="button" id="openZalo">Mở Zalo Chat</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- TAB: BANK -->
+    <div class="tab-content" id="tab-bank" style="display:none">
+      <section class="section-wrap">
+        <h2 class="section-title">Bank</h2>
+        <div class="grid-2">
+          <div class="bank-card">
+            <div class="bank-logo">MB</div>
+            <div>
+              <div style="font-weight:800">MB Bank</div>
+              <div class="bank-meta">CTK: NGUYEN QUOC CHIEN</div>
+              <div style="margin-top:6px;font-weight:700">STK: <span id="acc-mb">123456789</span></div>
+              <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">
+                <button class="btn btn-outline copy-btn" data-copy="#acc-mb">Copy STK</button>
+                <button class="btn btn-outline" type="button" onclick="window.open('https://www.mbbank.com.vn/','_blank')">Mở App</button>
+              </div>
+            </div>
+            <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=MB%20123456789%20NGUYEN%20QUOC%20CHIEN" alt="QR MB" style="width:100%;height:100%;object-fit:contain"></div>
+          </div>
+
+          <div class="bank-card">
+            <div class="bank-logo">VCB</div>
+            <div>
+              <div style="font-weight:800">Vietcombank</div>
+              <div class="bank-meta">CTK: NGUYEN QUOC CHIEN</div>
+              <div style="margin-top:6px;font-weight:700">STK: <span id="acc-vcb">987654321</span></div>
+              <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">
+                <button class="btn btn-outline copy-btn" data-copy="#acc-vcb">Copy STK</button>
+                <button class="btn btn-outline" type="button" onclick="window.open('https://www.vietcombank.com.vn/','_blank')">Mở App</button>
+              </div>
+            </div>
+            <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=VCB%20987654321%20NGUYEN%20QUOC%20CHIEN" alt="QR VCB" style="width:100%;height:100%;object-fit:contain"></div>
+          </div>
+
+          <div class="bank-card">
+            <div class="bank-logo">MM</div>
+            <div>
+              <div style="font-weight:800">Momo</div>
+              <div class="bank-meta">CTK: NGUYEN QUOC CHIEN</div>
+              <div style="margin-top:6px;font-weight:700">SĐT: <span id="acc-momo">084385531007</span></div>
+              <div style="margin-top:8px;display:flex;gap:8px;flex-wrap:wrap">
+                <button class="btn btn-outline copy-btn" data-copy="#acc-momo">Copy SĐT</button>
+                <button class="btn btn-outline" type="button" onclick="window.open('https://momo.vn/','_blank')">Mở App</button>
+              </div>
+            </div>
+            <div class="qr"><img src="https://api.qrserver.com/v1/create-qr-code/?size=180x180&data=MOMO%20084385531007%20NGUYEN%20QUOC%20CHIEN" alt="QR Momo" style="width:100%;height:100%;object-fit:contain"></div>
+          </div>
+        </div>
+        <p class="muted" style="margin-top:8px">Vui lòng ghi rõ nội dung chuyển khoản: <b>"Tên + dịch vụ"</b></p>
+      </section>
+    </div>
+  </main>
+
+  <footer class="container footer">
+    <p>© <span id="year"></span> Quốc Chiến • Made with ❤️</p>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="to-top" id="toTop" title="Lên đầu trang">▲</button>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
